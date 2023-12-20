@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PlatformService.Data;
+using PlatformService.SyncDataServices.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,8 @@ builder.Services.AddDbContext<AppDbContext>(
     options => options.UseInMemoryDatabase("InMem"));
 
 builder.Services.AddScoped<IPlatformRepository, PlatformReposotory>();
+builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
+
 
 var app = builder.Build();
 
@@ -33,3 +36,5 @@ app.MapControllers();
 PreporationDb.PrepPopulation(app, false);
 
 app.Run();
+
+
