@@ -24,6 +24,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\dropp\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
     <PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets Condition=" '$(PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets)' == '' ">C:\Users\dropp\.nuget\packages\microsoft.visualstudio.azure.containers.tools.targets\1.18.1</PkgMicrosoft_VisualStudio_Azure_Containers_Tools_Targets>
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\dropp\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.7</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\dropp\.nuget\packages\grpc.tools\2.59.0</PkgGrpc_Tools>
   </PropertyGroup>
 </Project>

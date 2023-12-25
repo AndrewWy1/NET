@@ -5,19 +5,28 @@ using PlatformService.SyncDataServices.Http;
 var builder = WebApplication.CreateBuilder(args);
 
 
-
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(
-    options => options.UseInMemoryDatabase("InMem"));
+//if (builder.Environment.IsProduction())
+//{
+//    Console.WriteLine("--> Using SqlServer Db");
+//    builder.Services.AddDbContext<AppDbContext>(opt =>
+//        opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn")));
+//}
+//else
+//{
+    Console.WriteLine("--> Using InMem Db");
+    builder.Services.AddDbContext<AppDbContext>(opt =>
+        opt.UseInMemoryDatabase("InMem"));
+//}
 
 builder.Services.AddScoped<IPlatformRepository, PlatformReposotory>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 
+Console.WriteLine($"--> CommandService Endpoint {builder.Configuration["CommandService"]}");
 
 var app = builder.Build();
 
@@ -27,13 +36,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-PreporationDb.PrepPopulation(app, false);
+PreporationDb.PrepPopulation(app, builder.Environment.IsProduction());
 
 app.Run();
 

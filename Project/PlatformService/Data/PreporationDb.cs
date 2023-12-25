@@ -15,7 +15,7 @@ namespace PlatformService.Data
 
         private static void SeedData(AppDbContext context, bool isProd)
         {
-            if (isProd)
+            if (false)
             {
                 Console.WriteLine("--> Attempting to apply migrations...");
                 try

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MBQLNuO2ztW1Web6WsAO6vF7bTW4zhXT+5wJpa6VgL/E9J55YEdELmnVR92Ceky3ax5vioWfFdex5Miq6qSJnA==",
+  "dgSpecHash": "y7DRHVpCmkVAU6gXAyn+UWNPoWKa5DGzGvM7xxyczzl29HvpXMn3yQTIkn651EJGU28nIX7dFXT+DwauVfw6dQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\NET\\Project\\PlatformService\\PlatformService.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\dropp\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.7\\microsoft.entityframeworkcore.inmemory.7.0.7.nupkg.sha512",
     "C:\\Users\\dropp\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.7\\microsoft.entityframeworkcore.relational.7.0.7.nupkg.sha512",
     "C:\\Users\\dropp\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.7\\microsoft.entityframeworkcore.sqlserver.7.0.7.nupkg.sha512",
+    "C:\\Users\\dropp\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.7\\microsoft.entityframeworkcore.tools.7.0.7.nupkg.sha512",
     "C:\\Users\\dropp\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\dropp\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\dropp\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
