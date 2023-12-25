@@ -47,3 +47,4 @@ D:\Projects\NET\Project\CommandService\obj\Debug\net7.0\refint\CommandService.dl
 D:\Projects\NET\Project\CommandService\obj\Debug\net7.0\CommandService.pdb
 D:\Projects\NET\Project\CommandService\obj\Debug\net7.0\CommandService.genruntimeconfig.cache
 D:\Projects\NET\Project\CommandService\obj\Debug\net7.0\ref\CommandService.dll
+D:\Projects\NET\Project\CommandService\bin\Debug\net7.0\appsettings.Production.json
