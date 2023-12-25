@@ -11,8 +11,8 @@ using PlatformService.Data;
 namespace PlatformService.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231223174755_initialmigration")]
-    partial class initialmigration
+    [Migration("20231225123655_Seeeding")]
+    partial class Seeeding
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
